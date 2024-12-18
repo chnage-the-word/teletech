@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/assets/css/about.css">
+
+    <!-- new link here -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="sticky-top shadow-sm">
+         <header class="bg-white py-1">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col text-center text-md-start">
+                        <a href="/index.html" class="navbar-brand fs-4">
+                            <img src="/assets/img/teletechlogo.png" class="img-fluid" width="130px" alt="">
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-sm-none d-md-block">
+                        <a class="btn contactbtn" href=" https://wa.me/+919359806212" target="_blank">WHATSAPP<i
+                                class="bi bi-whatsapp ms-2 fs-6"></i></a>
+                        <a href="#searchbar" class="btn btn-outline-dark rounded-0 ms-2 headicons"
+                            data-bs-toggle="offcanvas">
+                            <i class="bi bi-search"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-md bg-light navbar-light py-1">
+            <div class="container-fluid d-flex justify-content-evenly">
+                <div class="">
+                    <div class="headicons d-block d-sm-block d-md-none">
+                        <div class="row d-flex justify-content-end align-items-center">
+                            <div class="col-6">
+                                <a href="#searchbar" class="btn btn-outline-dark rounded-0 me-5 headicons border-0"
+                                    data-bs-toggle="offcanvas">
+                                    <i class="bi bi-search"></i>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-end">
+                                    <button class="navbar-toggler ms-5 border-0 py-1" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#sidebar" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                 
+                                     <div class="line1"></div>
+                                     <div class="line2"></div>
+                                     <div class="line3"></div>
+                                </button>
+                                </div>
+                               
+                            </div>
+                        </div>
+                      
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item simplenav">
+                                <a title="home" href="/index.html" class="nav-link text-semidark">Home</a>
+                            </li>
+                            <li class="nav-item simplenav">
+                                <a title="about" href="/about.html" class="nav-link active text-semidark">About</a>
+                            </li>
+                            <li class="nav-item simplenav dropdown" id="servicesDropdown">
+                                <a title="categories" class="nav-link navbarlinks normal dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu shadow border-0 rounded-0">
+                                    <div class="d-flex flex-row">
+                                        <div>
+                                            <li><a class="dropdown-item text-sm py-2"
+                                                    href="./categories/basicservice.html">Basic service providers
+                                                </a></li>
+                                            <li><a class="dropdown-item text-sm py-2"
+                                                    href="./categories/wirelessservice.html">Wireless service providers </a>
+                                            </li>
+                                            <li><a class="dropdown-item text-sm py-2"
+                                                    href="./categories/VSAT.html">VSAT service providers
+                                                </a></li>
+
+                                        </div>
+                                        <div>
+                                            <li><a class="dropdown-item text-sm py-2"
+                                                    href="./categories/ILDservice.html">ILD service providers
+                                                </a></li>
+                                            <li><a class="dropdown-item text-sm py-2" href="/categories/internetservice.html">Internet service providers</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-sm py-2" href="/categories/nldservice.html">NLD service providers
+                                                </a></li>
+
+                                        </div>
+                                    </div>
+
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item simplenav">
+                                <a href="/clients.html" class="nav-link text-semidark">Clients</a>
+                            </li>
+                            <li class="nav-item simplenav">
+                                <a title="gallery" href="/gallery.html" class="nav-link text-semidark">Gallery</a>
+                            </li>
+
+                            <li class="nav-item simplenav">
+                                <a title="contact" href="/contact.html" class="nav-link text-semidark">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="about py-3" style="text-align: justify;">
+            <div class="container-fluid">
+                <h3 class="text-semidark fs-3 fw-lighter bars"><span>About us</span></h3>
+
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div>
+                            <p class="text-dark text-normal mb-0" data-aos="fade-right" data-aos-duration="1500">
+                                "Welcome to <mark><b>Teletech Technology!</b></mark>  We offer a wide range of high-quality services, all
+                                under one roof. With a strong track record of excellence in the field a forward-thinking telecom company dedicated to transforming the way the world connects. Founded with a vision to bridge communication gaps, we deliver innovative solutions that empower businesses and individuals to thrive in the digital era.. Our portfolio includes the successful completion of over 250+
+                                projects, setting a benchmark for quality and precision. We serve clients in the
+                                A'Nagar, Pune, Nashik areas. Our dedicated team of skilled professionals is committed to
+                                providing personalized solutions that cater to the unique needs of our clients. Whether
+                                it's residential or commercial projects, we aim to deliver outstanding results that not
+                                only enhance aesthetics but also ensure functionality and durability. At Sai Vitthala
+                                Creation, we prioritize a customer-centric approach where client satisfaction is our
+                                utmost concern. We collaborate closely with our clients, understanding their vision and
+                                requirements, to deliver bespoke solutions that exceed expectations. Quality is the
+                                cornerstone of our work. We source premium materials and employ advanced techniques to
+                                ensure our installations are not only visually appealing but also built to last. Our
+                                unwavering commitment to excellence has earned us a reputation for reliability and
+                                trustworthiness. We invite you to explore our portfolio of completed projects,
+                                showcasing our attention to detail and dedication to delivering exceptional results.
+                                WHATSAPP today, and let Teletech Technology pvt Ltd be your trusted partner in turning your
+                                dreams into reality."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/img/about1.gif"
+                            class="img-fluid" data-aos="fade-right" data-aos-duration="1000" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- new section start from here -->
+        <section class="mt-2">
+            <div class="container">
+                <h2>Teletech Technology</h2>
+                <br>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-dark" data-toggle="tab" href="#home">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-dark" data-toggle="tab" href="#menu1">Chair Person</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-dark" data-toggle="tab" href="#menu2">Awards</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-dark" data-toggle="tab" href="#menu3">Our Achivement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-dark" data-toggle="tab" href="#menu4">Our Activities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-dark" data-toggle="tab" href="#menu5">Various services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-dark" data-toggle="tab" href="#menu6">Our strength</a>
+                  </li>
+                </ul>
+              
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div id="home" class="container tab-pane active bg-secondary" data-aos="fade-up"
+                  data-aos-duration="1000"><br>
+                    <h3 class="text-center mt-2">🛜--About Us--🛜</h3>
+                    <br>
+                    <section class="container py-5">
+                        <div class="row align-items-center">
+                            <!-- Image Column -->
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <img style="box-shadow: 6px 10px 8px black;" src="https://media.istockphoto.com/id/1507456431/photo/efficient-factory-management-portrait-of-smiling-senior-manager-businessman-or-ceo-in.jpg?s=612x612&w=0&k=20&c=u7FTGoQaOD-LGLX6jd0l6_Ul1wBgaiPcsU7daSgQrto=" class="img-fluid rounded" alt="Responsive Image">
+                            </div>
+                            <!-- Text Column -->
+                            <div class="col-md-6">
+                                <div class="justify-content-center text-center ">
+                                <h2>Responsive Section</h2>
+                                <p>
+                                     
+Teletech Technology is a leading passive communications infrastructure provider, An ISO 9001-2015, 14001 & OHSAS 18001 Certified Company established in the year 2005. Shree Combines Builds, Operates and manages its wired networks.
+
+Our wired network infrastructure solutions help customers to increase bandwidth; maximize existing capacity; improve network performance and availability; provide solutions to the largest buildings, venues and outdoor spaces; data canters and buildings of all shapes, sizes and complexity; at wireless cell sites, indoor, outdoor Wi-Fi, Small cells and Surveillance networks. Premier networks in India run on Shree Combines wired network
+                                </p>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-dark">Learn More</a>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+                  </div>
+                  <div id="menu1" class="container tab-pane fade"><br>
+                    <h3 class="text-center">🛜--Chair Person--🛜</h3>
+                    <section class="container py-5">
+                        <div class="row align-items-center">
+                            <!-- Image Column -->
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <img style="box-shadow: 6px 10px 8px black;" src="https://media.istockphoto.com/id/1507456431/photo/efficient-factory-management-portrait-of-smiling-senior-manager-businessman-or-ceo-in.jpg?s=612x612&w=0&k=20&c=u7FTGoQaOD-LGLX6jd0l6_Ul1wBgaiPcsU7daSgQrto=" class="img-fluid rounded" alt="Responsive Image">
+                            </div>
+                            <!-- Text Column -->
+                            <div class="col-md-6">
+                                <div class="justify-content-center text-center ">
+                                <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;"> Amol Pimparkar </h2>
+                                 <span class="text-center" style="font-size: 20px;">Managing Director</span>
+
+                                <p>
+                                    Amol Pimparkar is the visionary leader and Managing Director of Teletech Technology Pvt. Ltd., a leading name in the telecom industry. With a deep passion for innovation and technology,  has steered the company to deliver cutting-edge telecom solutions tailored to the evolving needs of businesses and individuals. Under his leadership, Teletech Technology has built a reputation for excellence in connectivity, customer-centric service, and driving growth in the digital communication space.
+                                </p>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-dark">Learn More</a>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- 1t section complete here -->
+                         <br>
+                         <br>
+                         <hr>
+                        <div class="row align-items-center">
+                            <!-- Image Column -->
+                          
+                            <!-- Text Column -->
+                            <div class="col-md-6">
+                                <div class="justify-content-center text-center ">
+                                    <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;">  Parag Nirali </h2>
+                                    <span class="text-center" style="font-size: 20px;">General Manager</span>
+                                <p>
+                                    As the General Manager of Teletech Technology Pvt. Ltd., Paral Nirali plays a pivotal role in overseeing operations and driving organizational growth. With a strong focus on operational efficiency and customer satisfaction, Parag Nirali ensures that the company consistently delivers innovative telecom solutions. Their strategic insight and leadership skills have been instrumental in fostering a collaborative work environment and achieving key business objectives.
+                                </p>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-dark">Learn More</a>
+                            </div>
+                            </div>
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <img style="box-shadow: 6px 10px 8px black;" src="https://media.istockphoto.com/id/1507456431/photo/efficient-factory-management-portrait-of-smiling-senior-manager-businessman-or-ceo-in.jpg?s=612x612&w=0&k=20&c=u7FTGoQaOD-LGLX6jd0l6_Ul1wBgaiPcsU7daSgQrto=" class="img-fluid rounded" alt="Responsive Image">
+                            </div>
+                        </div>
+                        <!-- 2nd section end here -->
+                    </section>
+                    
+                    
+                  </div>
+                  <div id="menu2" class="container tab-pane fade"><br>
+                    <h3 class="text-center">🛜--Awards--🛜</h3>
+                    <div class="d-flex justify-content-center align-items-center bg-light">
+                        <div class="text-center">
+                            <img src="./assets/img/award2.png" alt="Centered Image" class="img-fluid">
+                        </div>
+                    
+                        <!-- Bootstrap JS (optional) -->
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                    </div>
+                    <section class="container py-5">
+                        <div class="row align-items-center">
+                            <!-- Image Column -->
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <img style="box-shadow: 6px 10px 8px black;" src="https://media.istockphoto.com/id/1507456431/photo/efficient-factory-management-portrait-of-smiling-senior-manager-businessman-or-ceo-in.jpg?s=612x612&w=0&k=20&c=u7FTGoQaOD-LGLX6jd0l6_Ul1wBgaiPcsU7daSgQrto=" class="img-fluid rounded" alt="Responsive Image">
+                            </div>
+                            <!-- Text Column -->
+                            <div class="col-md-6">
+                                <div class="justify-content-center text-center ">
+                                <h2>Responsive Section</h2>
+                                <p>
+                                    Teletech Technology undertake various projects related to Telecom Industry and civil work involved in these project.Our vast experience and technical know how enable us to manage and execute the given project within targeted timespan.Our expert man power is capable of managing schedules, costing, quality control single handedly, hence reliving the Project Promoters from the hassle of co-ordinating various agencies for various tasks.
+                                    
+                                    </p>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-dark">Learn More</a>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- 1t section complete here -->
+                         
+                    </section>
+                  </div>
+                  <div id="menu3" class="container tab-pane fade"><br>
+                    <h3 class="text-center mt-2">🛜--Our Achivement--🛜</h3>
+                    <div class="d-flex justify-content-center align-items-center bg-light">
+                        <div class="text-center">
+                            <img src="./assets/img/achivement.png" alt="Centered Image" class="img-fluid">
+                        </div>
+                    
+                    
+                    </div>
+                    <p>
+                        <p>
+                            With the vast its valied human resource backup, TELETECH TECHNOLOGY have successfully executed Optical Fibre Cable, laying & trenching allied works for our esteemed clients like.5100 Km. Builtup for our Client Vadafone,Jio,TTML,IDEA,Airtel,BSNL,VSNL,Railway through various contractiong firms with best of quality & within the stipulated time and have achieved excellence in every aspect of Telecom Project execution.
+                            
+                            Personally we have completed various works of Vodafone, Idea, BSNL, BBNL, Reliance JIO, IIFCL and some projects will be work in progress.
+                            
+                            JNPT Optical Fibre Network Development Completed before Estimated Time</p>
+                            <br>
+                            <hr>
+                        <ol>
+                            <li> <b>Success in International Competitions:</b>TeleTech members excelled in the Huawei ICT Competition 2023-2024, winning first place in the regional finals held in Tunisia. This highlights the company's commitment to nurturing talent and technological excellence</li>
+                        </ol>
+                        <ol>
+                            <li> <b>Major Projects and Contracts::</b>The company has executed significant projects like the multi-billion-dollar TEP6 project in Saudi Arabia and a multi-million-dollar contract with Telecom Egypt. These accomplishments underscore its ability to handle large-scale, impactful projects​</li>
+                        </ol>
+                        <ol>
+                            <li> <b>Leadership in Industry Innovation:</b>TeleTech introduced cutting-edge technologies and solutions tailored to evolving customer needs, solidifying its reputation as a forward-thinking organization. Its approach has garnered industry-wide recognition and client satisfaction</li>
+                        </ol>
+                        <ol>
+                            <li> <b>Global Partnerships:</b>The company collaborates with prominent global partners, including Huawei and other leading tech firms, enhancing its capabilities and market reach​</li>
+                        </ol>
+                    </p>
+                  </div>
+                  <div id="menu4" class="container tab-pane fade"><br>
+                    <h3 class="text-center mt-2">🛜--Our Activities--🛜</h3>
+                    <section class="container py-5">
+                        <div class="row align-items-center">
+                            <!-- Image Column -->
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <img style="box-shadow: 6px 10px 8px black;" src="https://media.istockphoto.com/id/1507456431/photo/efficient-factory-management-portrait-of-smiling-senior-manager-businessman-or-ceo-in.jpg?s=612x612&w=0&k=20&c=u7FTGoQaOD-LGLX6jd0l6_Ul1wBgaiPcsU7daSgQrto=" class="img-fluid rounded" alt="Responsive Image">
+                            </div>
+                            <!-- Text Column -->
+                            <div class="col-md-6">
+                                <div class="justify-content-center text-center">
+                                <h2>Responsive Section</h2>
+                                <p>
+                                    
+TELETECH TECHNOLOGY undertake various projects related to Telecom Industry and civil work involved in these project.
+
+Our vast experience and technical know how enable us to manage and execute the given project within targeted timespan.
+
+Our expert man power is capable of managing schedules, costing, quality control single handedly, hence reliving the Project Promoters from the hassle of co-ordinating various agencies for various tasks.</p>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-dark">Learn More</a>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </section>
+                  </div>
+                  <div id="menu5" class="container tab-pane fade"><br>
+                    <h3 class="text-center">🛜--Various services--🛜</h3>
+                    <p>
+                        Right from mobilization of manpower, machinery & equipments to start up activities to extimation of material requirement to sourcing, and a horde of various other related activities like obtaining approval from requisite municipal authorites/ROW. SHREE COMBINES is company with a vision
+                        
+                        Route Servay and preparation of drawings.
+                        
+                        Permission from concerned authourities.
+                        
+                        Project mobilization. Stroring materials on site. Trenching,laying of HDPE,GI Pipes & Backfilling,Restoration. Cable Pulling, Jointing,Splicing. Testing of Cables. Documentation submission. MSEB lazing & Electrical supply all material. Tower foundation A) GBT & B) RTT</p>
+                        <br>
+                        <hr>
+                        <div>
+                            <h4 class="text-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">TELETECH TECHNOLOGY Pvt. Ltd. is company with a vision Below</h4>
+                            <br>
+
+                            <ul>
+                                <li>End to End OFC Execution.</li>
+                            </ul>
+                            <ul>
+                                <li>Civil Work of Tower.</li>
+                            </ul>
+                            <ul>
+                                <li>Tower Installation.</li>
+                            </ul>
+                            <ul>
+                                <li>End To End EV Work.</li>
+                            </ul>
+                            <ul>
+                                <li>ILA Development & Deployment</li>
+                            </ul>
+                            <ul>
+                                <li>MCN Upgradation.</li>
+                            </ul>
+                            <ul>
+                                <li>EV work For Metro Rail.</li>
+                            </ul>
+                            <ul>
+                                <li>MNGL Gas Line</li>
+                            </ul>
+                        </div>
+                  </div>
+                  <div id="menu6" class="container tab-pane fade"><br>
+                    <h3 class="text-center">🛜--Our Strength--🛜</h3>
+                    <p>
+                        <div class="border">
+                            <ul>
+                                <h4 class="mt-2" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Our strength and Equipments</h4>
+                                <li>100+ Working staff - Professional Workers, Technical Staff, Quality Engineers, Project Execution & etc..</li>
+                                <li>200+ Associate Partners End To End Execution.</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="border">
+                            <ul>
+                                <h4 class="mt-2" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Own-Machinery</h4>
+                                <li>12-HDD,20nos-Escavator come braker, 6nos-Blowing Machine, 6 nos- FRT</li>
+                       
+                            </ul>
+                        </div>
+                        <br>
+
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Equipments</th>
+                                    <th>Company</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Excavator - 200</td>
+                                    <td>TATA</td>
+                                </tr>
+                                <tr>
+                                    <td>EX Breaker - 200</td>
+                                    <td>INDUS</td>
+                                </tr>
+                                <tr>
+                                    <td>Excavator - 140</td>
+                                    <td>Hyundai</td>
+                                </tr>
+                                <tr>
+                                    <td>EX Breaker - 140</td>
+                                    <td>Atlas</td>
+                                </tr>
+                                <tr>
+                                    <td>JCB 3DX</td>
+                                    <td>TATA - Hitachi</td>
+                                </tr>
+                                <tr>
+                                    <td>HDD Vermeer 24 x 40 series II</td>
+                                    <td>Indus</td>
+                                </tr>
+                                <tr>
+                                    <td>HDD Vermeer 24 x 40</td>
+                                    <td>JCB</td>
+                                </tr>
+                                <tr>
+                                    <td>Truck Container</td>
+                                    <td>Vermeer USA</td>
+                                </tr>
+                                <tr>
+                                    <td>Water Tanker</td>
+                                    <td>Verneer USA</td>
+                                </tr>
+                                <tr>
+                                    <td>Truck Traler</td>
+                                    <td>TATA / Ashok Leyland 2515</td>
+                                </tr>
+                                <tr>
+                                    <td>Splice Machine</td>
+                                    <td>TATA 407</td>
+                                </tr>
+                                <tr>
+                                    <td>OTDR</td>
+                                    <td>TATA</td>
+                                </tr>
+                                <tr>
+                                    <td>Optical Power Source</td>
+                                    <td>Fujikura Fitel</td>
+                                </tr>
+                                <tr>
+                                    <td>Optical Power Meter</td>
+                                    <td>Acterna India Pvt. Ltd(JDSU).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- new section end here -->
+
+        <section class="missionvision mt-3 py-5">
+            <div class="container">
+                <h3 class="text-semidark fs-3 fw-lighter bars"><span>Mission & Vision</span></h3>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <div class="testimonial-item" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000">
+                                <div class="testimonial-text bg-secondary text-normal shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="/assets/img/goal.png" class="img-fluid" width="40px" alt="">
+                                    </div>"At Teletech Technology, our mission is to be a catalyst for innovation and connectivity in the telecommunications sector. We strive to:
+
+                                    Provide seamless, high-quality communication services that meet the demands of a rapidly changing digital world.
+                                    Foster inclusivity by ensuring access to reliable telecommunications for urban, rural, and underserved communities.
+                                    Enable businesses to scale and succeed by offering cutting-edge solutions tailored to their evolving needs.
+                                    Promote sustainable practices by incorporating energy-efficient and environmentally friendly technologies in our operations."
+                                </div>
+                            </div>
+                            <h5 class="text-main">MISSION</h5>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <div class="testimonial-item"data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
+                                <div class="testimonial-text bg-secondary text-normal shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="/assets/img/view.png" class="img-fluid" width="40px" alt="">
+                                    </div>" At Teletech Technology Our vision is to shape the future of connectivity and become a global leader in telecommunications by:
+
+                                    Revolutionizing how people and businesses interact through innovative telecom solutions.
+                                    Building a robust network infrastructure that supports emerging technologies like 5G, IoT, and AI-driven communication tools.
+                                    Creating a digital ecosystem that bridges gaps, fosters collaboration, and connects communities worldwide.
+                                    Championing sustainability by reducing our carbon footprint and contributing to a greener planet.""
+                                </div>
+                            </div>
+                            <h5 class="text-main">VISION</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="https://wa.me/+917821952912" target="_blank" class="wpchat d-block d-sm-block d-md-none">
+            <img src="/assets/img/whatsapp.png" class="img-fluid" width="45px" alt="whatsapp">
+        </a>
+    </main>
+
+    <footer class="bg-dark text-light mt-5">
+        <div class="text-center pt-3">
+            <span class="text-white text-sm">© 2024 Teletech Technology,All rights reserved.</span>
+        </div>
+        <div class="container-fluid pt-3 pb-3 wow fadeIn">
+           
+            <div class="py-4">
+                <div class="row w-100">
+                    <div class="col-md-2 col-sm-6 col-12">
+                        <div class="mb-4" data-aos="zoom-out" data-aos-delay="100" data-aos-duration="1000">
+                            <img src="/assets/img/teletechlogo.png" class="img-fluid" width="150" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link  text-normal" target="_blank" href="/about.html">About</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" href="/clients.html">Clients</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link  text-normal" target="_blank" href="/gallery.html">Gallery</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" href="/contact.html">Contact</a>
+                        </span>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <h5 class="text-white mb-4">Services</h5>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link  text-normal" target="_blank" href="/categories/basicservice.html">basic service providers
+                                </a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" href="/categories/wirelessservice.html"> Wireles service providers</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link  text-normal" target="_blank"
+                                href="/categories/VSAT.html">VSAT service providers</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" target="_blank" href="/categories/ILDservice.html">ILD service providers</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" target="_blank" href="/categories/internetservice.html">internet service providers</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" target="_blank" href="/categories/nldservice.html">
+                                NLD service providers</a>
+                        </span>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-12  text-normal">
+                        <a target="_blank" href="https://wa.me/+917821952912"
+                            class="pb-1 mb-2 text-white text-decoration-none text-sm">
+                            <p class="mb-0"><i class="fa fa-phone-alt me-3"></i>+91-9359806212</p>
+                        </a><a target="_blank" href="mailto:Teletech9890@gmail.com"
+                            class="mb-2 text-white text-decoration-none">
+                            <p class="mt-2"><i class="fa fa-envelope me-3"></i>Teletech9890@gmail.com</p>
+                        </a>
+                        <a target="_blank" class="mb-2 text-white text-decoration-none text-sm">
+                            <i class="fas fa-map-marker-alt me-3"></i><span>Pune office :</span>
+                            <p class="mt-2">S/N No.28/11 Ambegoan BK ,Near chintamani Dnyanpeeth Dhankawadi,
+                                Pune:411046 </p>
+                        </a>
+                        <a target="_blank" class="mb-2 text-white text-decoration-none text-sm">
+                            <i class="bi bi-hammer me-3"></i><span class="mb-2">Nashik workshop :</span>
+                            <p class="mt-2">DGP nagar 1,Datir farm lane no 2,Ambad,nashik</p>
+                        </a>
+                        <a target="_blank" class="mb-2 text-white text-decoration-none text-sm">
+                            <i class="fas fa-map-marker-alt me-3"></i><span class="mb-2">Sangmner office & workshop
+                                :</span>
+                            <p class="mt-2">Survey No. 367/2/1, Near Golden Days School, Mirchi Hotel Takli Link Road, Tapovan, Panchavati, Nashik-3 Pin-422003, Nashik, Maharashtra</p>
+                        </a>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-light rounded-circle me-2" target="_blank" href="https://www.facebook.com/profile.php?id=100093305478945"><i
+                                    class="fab fa-facebook-f"></i></a><a
+                                class="btn btn-square btn-outline-light rounded-circle me-2" target="_blank"
+                                href="https://www.instagram.com/saivitthala.creation1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-yellow text-center py-2">
+            <span class="text-black text-sm fw-semibold">Powered by Increditex Software Solutions Pvt.Ltd</span>
+    </div>
+
+
+    <div class="offcanvas offcanvas-top searchbarbody" id="searchbar">
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-around align-items-center">
+                <div class="input-group w-50 searchinput">
+                    <input type="text" class="form-control border-0 shadow-none bg-transparent text-yellow text-sm"
+                        placeholder="Search for content">
+                    <span class="input-group-text bg-transparent border-0"><i
+                            class="bi bi-search text-yellow"></i></span>
+                </div>
+                <button class="btn-close shadow-none ms-5 btn-close-white btn-sm" data-bs-dismiss="offcanvas"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start sidebar" id="sidebar">
+
+        <div class="offcanvas-body">
+            <div class="text-end">
+                <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="pt-3">
+                <ul class="list-unstyled text-center fs-6">
+                    <li class="nav-item simplenav py-3">
+                        <a title="about" href="/index.html" class="nav-link active text-light">Home</a>
+                    </li>
+                    <li class="nav-item simplenav py-3">
+                        <a title="about" href="/about.html" class="nav-link text-light">About</a>
+                    </li>
+                    <li class="nav-item simplenav dropdown" id="servicesDropdown">
+                        <a title="categories" class="nav-link navbarlinks text-white py-3 normal dropdown-toggle"
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu shadow border-0 rounded-0 bg-semidark">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="./categories/basicservice.html">Basic services providers
+                                        </a></li>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="./categories/wirelessservice.html">Wireless services providers</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="./categories/VSAT.html">VSAT Service Providers
+                                        </a></li>
+
+                                </div>
+                                <div>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="./categories/ILDservice.html">ILD sservice providers
+                                        </a></li>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="/categories/internetservice.html">internet Service providers
+                                            windows</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="/categories/nldservice.html">NLD services providers
+                                        </a></li>
+
+                                </div>
+                            </div>
+
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item simplenav py-3">
+                        <a title="clients" href="/clients.html" class="nav-link text-light">Clients</a>
+                    </li>
+                    <li class="nav-item simplenav py-3">
+                        <a title="gallery" href="/gallery.html" class="nav-link text-light">Gallery</a>
+                    </li>
+
+                    <li class="nav-item simplenav py-3">
+                        <a title="contact" href="/contact.html" class="nav-link text-light">Contact</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1c9005996e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $('.slider').slick({
+            dots: false,
+            autoplay: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplaySpeed: 1000,
+            centerMode: true,
+            centerPadding: '20',
+            arrows: false,
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 767.5,
+                    settings: {
+                        centerPadding: '10px',
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+            ]
+        });
+    </script>
+</body>
+
+</html>
