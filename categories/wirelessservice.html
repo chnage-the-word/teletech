@@ -13,7 +13,150 @@
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="/assets/css/categories.css">
+    
 </head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Teko:700);
+
+
+
+.snip *,
+.snip *:before,
+.snip *:after {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.snip {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 315px;
+  min-width: 230px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  margin: 10px;
+  text-align: left;
+  transform: translateZ(0);
+}
+
+.snip:hover .snip__title,
+.snip:hover .snip__text {
+  transform: translateY(0);
+  opacity: 0.9;
+  transition-delay: 0.2s;
+}
+
+.snip::before,
+.snip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #b81212;
+  opacity: 0.5;
+  transition: all 0.45s ease;
+}
+
+.snip::before {
+  transform: skew(30deg) translateX(-80%);
+}
+
+.snip::after {
+  transform: skew(-30deg) translateX(-70%);
+}
+
+.snip:hover::before {
+  transform: skew(30deg) translateX(-20%);
+  transition-delay: 0.05s;
+}
+
+.snip:hover::after {
+  transform: skew(-30deg) translateX(-10%);
+}
+
+.snip:hover .snip__figcaption::before {
+  transform: skew(30deg) translateX(-40%);
+  transition-delay: 0.15s;
+}
+
+.snip:hover .snip__figcaption::after {
+  transform: skew(-30deg) translateX(-30%);
+  transition-delay: 0.1s;
+}
+
+.snip__image {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip__figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 25px 40% 25px 20px;
+}
+
+.snip__figcaption::before,
+.snip__figcaption::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #b81212;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: "";
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.snip__figcaption::before {
+  transform: skew(30deg) translateX(-100%);
+}
+
+.snip__figcaption::after {
+  transform: skew(-30deg) translateX(-90%);
+}
+
+.snip__title,
+.snip__text {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip__title {
+  font-family: "Teko", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.snip__text {
+  font-size: 0.9em;
+}
+
+.snip__link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+</style>
 
 <body>
 
@@ -177,27 +320,37 @@
          
         <section class="aboutdoor my-5" id="moreabtdoor">
             <div class="container">
-                <h3 class="text-semidark fs-3 fw-lighter bars"><span>Types of Aluminium windows</span></h3>
+                <h3 class="text-semidark fs-3 fw-lighter bars"><span>Types of Wireless service providers</span></h3>
                  <div class="row mt-3 g-4">
                      <div class="col-md-6 col-sm-12">
                          <div class="card rounded-3 shadow-sm" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000">
                               <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6 col-12">
-                                          <h6 class="text-semidark fw-semibold">Casement windows</h6>
+                                          <h6 class="text-semidark fw-semibold">satellite communication service</h6>
                                           <div class="mt-3">
-                                              <span class="text-normal">These windows are hinged on one side and open outward like a door. They are known for excellent ventilation and a modern, sleek look</span>
+                                              
                                             
                                           </div>
                                           <div class="mt-4">
-                                             <a href="https://wa.me/+917821952912" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to order</a>
+                                             <a href="https://wa.me/+919359806212" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to more inforamtion</a>
                                           </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-12">
-                                        <div class="window1  text-start text-md-end mt-3 mt-md-0">
-                                           <img src="/assets/img/window/casment.jpg" class="img-fluid" alt="">
+                                        <div class="window1 mt-md-0">
+                                            <figure class="snip">
+                                                <img class="snip__image" src="/assets/img/wireless service providers/wire1.png" alt="card" />
+                                                <figcaption class="snip__figcaption">
+                                                  <h3 class="snip__title">satellite</h3>
+                                                  <p class="snip__text">
+                                                   (types of wireless service )
+                                                  </p>
+                                                </figcaption>
+                                                <a class="snip__link" href="#"></a>
+                                              </figure>
                                         </div>
                                     </div>
+
                                 </div>
                               </div>
                            
@@ -208,19 +361,28 @@
                              <div class="card-body">
                                <div class="row">
                                    <div class="col-md-6 col-sm-6 col-12">
-                                         <h6 class="text-semidark fw-semibold">Sliding window</h6>
+                                         <h6 class="text-semidark fw-semibold">Broadcast radio</h6>
                                          <div class="mt-3">
-                                             <span class="text-normal">Sliding windows have one or more sashes that slide horizontally within the frame. They are easy to operate and provide a contemporary appearance.</span>
+                                           
                                             
                                          </div>
                                          <div class="mt-4">
-                                            <a href="https://wa.me/+917821952912" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to order</a>
+                                            <a href="https://wa.me/+919359806212" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to more information</a>
                                          </div>
                                    </div>
                                    <div class="col-md-6 col-sm-6 col-12">
-                                       <div class="window1  text-start text-md-end mt-3 mt-md-0">
-                                          <img src="/assets/img/window/sliding.jpg" class="img-fluid" alt="">
-                                       </div>
+                                    <div class="window1 mt-md-0">
+                                    <figure class="snip">
+                                        <img class="snip__image" src="/assets/img/wireless service providers/wire2.jpg" alt="card" />
+                                        <figcaption class="snip__figcaption">
+                                          <h3 class="snip__title">broadcast radio</h3>
+                                          <p class="snip__text">
+                                           (wireless service)
+                                          </p>
+                                        </figcaption>
+                                        <a class="snip__link" href="#"></a>
+                                      </figure>
+                                    </div>
                                    </div>
                                </div>
                              </div>
@@ -232,19 +394,28 @@
                              <div class="card-body">
                                <div class="row">
                                    <div class="col-md-6 col-sm-6 col-12">
-                                         <h6 class="text-semidark fw-semibold">Awning windows</h6>
+                                         <h6 class="text-semidark fw-semibold">Microwave service </h6>
                                          <div class="mt-3">
-                                             <span class="text-normal">Awning windows are hinged at the top and open outward from the bottom. They are great for ventilation while providing protection from rain.</span>
+                                          
                                         
                                          </div>
                                          <div class="mt-4">
-                                            <a href="https://wa.me/+917821952912" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to order</a>
+                                            <a href="https://wa.me/+919359806212" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to more information</a>
                                          </div>
                                    </div>
                                    <div class="col-md-6 col-sm-6 col-12">
-                                       <div class="window1  text-start text-md-end mt-3 mt-md-0">
-                                          <img src="/assets/img/window/awning.jpg" class="img-fluid" alt="">
-                                       </div>
+                                    <div class="window1 mt-md-0">
+                                    <figure class="snip">
+                                        <img class="snip__image" src="/assets/img/wireless service providers/wire3.jpg" alt="card" />
+                                        <figcaption class="snip__figcaption">
+                                          <h3 class="snip__title">microwave</h3>
+                                          <p class="snip__text">
+                                            (types of wireless service)
+                                          </p>
+                                        </figcaption>
+                                        <a class="snip__link" href="#"></a>
+                                      </figure>
+                                      </div>
                                    </div>
                                </div>
                              </div>
@@ -256,94 +427,28 @@
                              <div class="card-body">
                                <div class="row">
                                    <div class="col-md-6 col-sm-6 col-12">
-                                         <h6 class="text-semidark fw-semibold">Double-Hung windows</h6>
+                                         <h6 class="text-semidark fw-semibold">Personal area network</h6>
                                          <div class="mt-3">
-                                             <span class="text-normal">Double-hung
-                                                windows consist of two sashes that slide vertically within the frame. Both the upper and lower sashes can be opened, allowing for better control of airflow.</span>
-                                            
-                                         </div>
-                                         <div class="mt-4">
-                                            <a href="https://wa.me/+917821952912" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to order</a>
-                                         </div>
-                                   </div>
-                                   <div class="col-md-6 col-sm-6 col-12">
-                                       <div class="window1  text-start text-md-end mt-3 mt-md-0">
-                                          <img src="/assets/img/window/doublehung.jpg" class="img-fluid" alt="">
-                                       </div>
-                                   </div>
-                               </div>
-                             </div>
-                          
-                        </div>
-                    </div>
-                     <div class="col-md-6 col-sm-12">
-                        <div class="card rounded-3 shadow-sm"data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000">
-                             <div class="card-body">
-                               <div class="row">
-                                   <div class="col-md-6 col-sm-6 col-12">
-                                         <h6 class="text-semidark fw-semibold">Fixed windows</h6>
-                                         <div class="mt-3">
-                                             <span class="text-normal">Fixed windows, also
-                                                known as picture windows, do not open. They are designed to provide unobstructed views and natural light.</span>
-                                            
-                                         </div>
-                                         <div class="mt-4">
-                                            <a href="https://wa.me/+917821952912" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to order</a>
-                                         </div>
-                                   </div>
-                                   <div class="col-md-6 col-sm-6 col-12">
-                                       <div class="window1  text-start text-md-end mt-3 mt-md-0">
-                                          <img src="/assets/img/window/fixed.jpg" class="img-fluid" alt="">
-                                       </div>
-                                   </div>
-                               </div>
-                             </div>
-                          
-                        </div>
-                    </div>
-                     <div class="col-md-6 col-sm-12">
-                        <div class="card rounded-3 shadow-sm"data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
-                             <div class="card-body">
-                               <div class="row">
-                                   <div class="col-md-6 col-sm-6 col-12">
-                                         <h6 class="text-semidark fw-semibold">Louvered windows</h6>
-                                         <div class="mt-3">
-                                             <span class="text-normal">Louvered windows
-                                                have multiple horizontal glass slats that can be angled to control the amount of airflow and sunlight entering the room</span>
                                              
-                                         </div>
-                                         <div class="mt-4">
-                                            <a href="https://wa.me/+917821952912" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to order</a>
-                                         </div>
-                                   </div>
-                                   <div class="col-md-6 col-sm-6 col-12">
-                                       <div class="window1  text-start text-md-end mt-3 mt-md-0">
-                                          <img src="/assets/img/window/louvered.jpg" class="img-fluid" alt="">
-                                       </div>
-                                   </div>
-                               </div>
-                             </div>
-                          
-                        </div>
-                    </div>
-                     <div class="col-md-6 col-sm-12">
-                        <div class="card rounded-3 shadow-sm"data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000">
-                             <div class="card-body">
-                               <div class="row">
-                                   <div class="col-md-6 col-sm-6 col-12">
-                                         <h6 class="text-semidark fw-semibold">Custom windows</h6>
-                                         <div class="mt-3">
-                                             <span class="text-normal">Custom aluminium windows can be designed to fit unique architectural styles and specific preferences, allowing for a personalized look and functionality.</span>
                                             
                                          </div>
                                          <div class="mt-4">
-                                            <a href="https://wa.me/+917821952912" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to order</a>
+                                            <a href="https://wa.me/+919359806212" target="_blank" class="btn btn-sm rounded-0 btn-dark">contact to more information</a>
                                          </div>
                                    </div>
                                    <div class="col-md-6 col-sm-6 col-12">
-                                       <div class="window1  text-start text-md-end mt-3 mt-md-0">
-                                          <img src="/assets/img/window/custom.jpg" class="img-fluid" alt="">
-                                       </div>
+                                    <div class="window1 mt-md-0">
+                                    <figure class="snip">
+                                        <img class="snip__image" src="/assets/img/wireless service providers/wire4.webp" alt="card" />
+                                        <figcaption class="snip__figcaption">
+                                          <h3 class="snip__title">PAN</h3>
+                                          <p class="snip__text">
+                                           (type of wireless secvice)
+                                          </p>
+                                        </figcaption>
+                                        <a class="snip__link" href="#"></a>
+                                      </figure>
+                                      </div>
                                    </div>
                                </div>
                              </div>
